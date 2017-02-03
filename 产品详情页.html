@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>上海翼帆金属制品有限公司</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/addCss.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+</head>
+
+<body>
+<!--header开始  -->
+
+<header class="clearfix">
+    <div class="logo_fl animated pulse">
+        <a href="index.html"><img src="images/logo.png"/></a>
+    </div>
+    <div class="nav_centering">
+        <ul class="clearfix">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="about.html">关于翼帆</a>
+            </li>
+            <li class="on">
+                <a href="pcenter.html">产品中心</a>
+            </li>
+            <li>
+                <a href="pmade.html">产品定制</a>
+            </li>
+            <li>
+                <a href="service.html">服务团队</a>
+            </li>
+            <li>
+                <a href="honor.html">荣誉资质</a>
+            </li>
+            <li>
+                <a href="appointed.html">厂房设备</a>
+            </li>
+            <li>
+                <a href="contact.html">联系我们</a>
+            </li>
+        </ul>
+    </div>
+    <div class="switch_fr">
+
+        <span class="icon"> <a href="#" class="red">中文</a></span>
+
+        <span class=""><a href="#">英文</a></span>
+    </div>
+
+</header>
+<!--header结束  -->
+
+<div class="page-banner">
+    <img src="images/aboutbanner.jpg"/>
+</div>
+<!--banner结束  -->
+<div class="crumbsnav">
+    <p>当前位置：
+        <a href="index.html">首页</a>&gt;<a href="pcenter.html">产品中心</a>&gt;产品详情</p>
+</div>
+<div class="product">
+    <div class="con-FangDa" id="fangdajing">
+        <div class="con-fangDaIMg">
+            <!-- 正常显示的图片-->
+            <img class="conMile" src="images/addimg_03.png">
+            <img class="fdg" src="images/fangdajing.png" alt=""/>
+            <!-- 滑块-->
+            <div class="magnifyingBegin"></div>
+            <!-- 放大镜显示的图片 -->
+            <div class="magnifyingShow"><img class="conMile2" src="images/addimg_03.png"></div>
+        </div>
+        <div class="imgList">
+            <a class="a1" href="javascript:;"></a>
+            <ul class="con-FangDa-ImgList">
+                <!-- 图片显示列表 -->
+                <li class="active"><img src="images/addimg_03.png"></li>
+                <li><img src="images/addimg_01_03.jpg"></li>
+                <li><img src="images/addimg_03.png"></li>
+                <li><img src="images/addimg_01_03.jpg"></li>
+                <li><img src="images/addimg_03.png"></li>
+                <li><img src="images/addimg_01_03.jpg"></li>
+                <li><img src="images/addimg_03.png"></li>
+                <li><img src="images/addimg_01_03.jpg"></li>
+                <li><img src="images/addimg_03.png"></li>
+            </ul>
+            <a class="a2" href="javascript:;"></a>
+        </div>
+    </div>
+    <div class="productRt">
+        <h3>DBZA01系列防爆控制按钮盒（主令控制器）</h3>
+        <h4><span>适用范围</span></h4>
+
+        <div>
+            <p>1、1区、2区IIA~IIC类爆炸性气体环境，和/或20区、21区、22区可燃性粉尘场所;</p>
+
+            <p>2、温度级别：T1~T6;</p>
+
+            <p>3、户内、户外；</p>
+
+            <p>4、用于化工、炼油、石油开采、海洋石油平台、游轮、军工等危险场所。</p>
+        </div>
+        <a href="javascript:;">返回</a>
+    </div>
+</div>
+
+
+<footer>
+    <ul class="footing clearfix ">
+        <li>
+            <a href="about.html">关于翼帆</a>
+        </li>
+        <li>
+            <a href="pcenter.html">产品中心</a>
+        </li>
+        <li>
+            <a href="pmade.html">产品定制</a>
+        </li>
+        <li>
+            <a href="service.html">服务团队</a>
+        </li>
+        <li>
+            <a href="honor.html">荣誉资质</a>
+        </li>
+        <li>
+            <a href="appointed.html">厂房设备</a>
+        </li>
+        <li>
+            <a href="contact.html">联系我们</a>
+        </li>
+
+    </ul>
+    <p>Copyright 2015,Shanghai Yi Fan Automation Technology co.,Ltd All Rights Reserved 上海翼帆金属制品有限公司</p>
+
+    <p>地址：上海市奉贤区青村镇青高路698-甲号 电话：021-37526823 手机：13817682349</p>
+
+    <p>增值电信业务经营许可证：沪ICP备11046442号</p>
+
+    <div class="f-copyright">
+        <ul>
+            <li>
+                <a></a>
+            </li>
+            <li>
+                <a></a>
+            </li>
+            <li>
+                <a></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script type="application/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+    //分页居中显示
+
+    var pw = (($(".paging").parent().width()) - ($(".paging").width())) / 2;
+    $(".paging").css("margin-left", pw);
+
+    //放大镜效果
+    $(function () {
+        $.fn.magnifying = function () {
+            var that = $(this),
+                    $imgCon = that.find('.con-fangDaIMg'),//正常图片容器
+                    $Img = $imgCon.find('.conMile'),//正常图片，还有放大图片集合
+                    $Img2 = $imgCon.find('.conMile2'),//正常图片，还有放大图片集合
+                    $fdg = $imgCon.find('.fdg'),//正常图片，还有放大图片集合
+                    $Drag = that.find('.magnifyingBegin'),//拖动滑动容器
+                    $show = that.find('.magnifyingShow'),//放大镜显示区域
+                    $showIMg = $show.find('img'),//放大镜图片
+                    $ImgList = that.find('.con-FangDa-ImgList > li >img'),
+                    multiple = $show.width() / $Drag.width();
+
+            $imgCon.mousemove(function (e) {
+                $Drag.css('display', 'block');
+                $show.css('display', 'block');
+                $fdg.css('display', 'none');
+                //获取坐标的两种方法
+                // var iX = e.clientX - this.offsetLeft - $Drag.width()/2,
+                // 	iY = e.clientY - this.offsetTop - $Drag.height()/2,
+                var iX = e.pageX - $(this).offset().left - $Drag.width() / 2,
+                        iY = e.pageY - $(this).offset().top - $Drag.height() / 2,
+                        MaxX = $imgCon.width() - $Drag.width(),
+                        MaxY = $imgCon.height() - $Drag.height();
+
+                /*这一部分可代替下面部分，判断最大最小值
+                 var DX = iX < MaxX ? iX > 0 ? iX : 0 : MaxX,
+                 DY = iY < MaxY ? iY > 0 ? iY : 0 : MaxY;
+                 $Drag.css({left:DX+'px',top:DY+'px'});
+                 $showIMg.css({marginLeft:-3*DX+'px',marginTop:-3*DY+'px'});*/
+
+                iX = iX > 0 ? iX : 0;
+                iX = iX < MaxX ? iX : MaxX;
+                iY = iY > 0 ? iY : 0;
+                iY = iY < MaxY ? iY : MaxY;
+                $Drag.css({left: iX + 'px', top: iY + 'px'});
+                $showIMg.css({marginLeft: -multiple * iX + 'px', marginTop: -multiple * iY + 'px'});
+                //return false;
+            });
+            $imgCon.mouseout(function () {
+                $Drag.css('display', 'none');
+                $show.css('display', 'none');
+                $fdg.css('display', 'block');
+            });
+
+            $ImgList.mousemove(function () {
+                var NowSrc = $(this).attr("src");
+                $Img.attr('src', NowSrc);
+                $Img2.attr('src', NowSrc);
+                $(this).parent().addClass('active').siblings().removeClass('active');
+            });
+        }
+
+        $("#fangdajing").magnifying();
+    });
+
+    //图片预览小图移动效果,页面加载时触发
+    $(function(){
+        var tempLength = 0; //临时变量,当前移动的长度
+        var viewNum = 4; //设置每次显示图片的个数量
+        var moveNum = 2; //每次移动的数量
+        var moveTime = 300; //移动速度,毫秒
+        var scrollDiv = $(".con-FangDa-ImgList"); //进行移动动画的容器
+        var scrollItems = $(".con-FangDa-ImgList li"); //移动容器里的集合
+        var moveLength = scrollItems.eq(0).width() * moveNum; //计算每次移动的长度
+        var countLength = (scrollItems.length - viewNum) * scrollItems.eq(0).width(); //计算总长度,总个数*单个长度
+
+        //下一张
+        $(".imgList .a2").bind("click",function(){
+            if(tempLength < countLength){
+                if((countLength - tempLength) > moveLength){
+                    scrollDiv.animate({left:"-=" + moveLength + "px"}, moveTime);
+                    tempLength += moveLength;
+                }else{
+                    scrollDiv.animate({left:"-=" + (countLength - tempLength) + "px"}, moveTime);
+                    tempLength += (countLength - tempLength);
+                }
+            }
+        });
+        //上一张
+        $(".imgList .a1").bind("click",function(){
+            if(tempLength > 0){
+                if(tempLength > moveLength){
+                    scrollDiv.animate({left: "+=" + moveLength + "px"}, moveTime);
+                    tempLength -= moveLength;
+                }else{
+                    scrollDiv.animate({left: "+=" + tempLength + "px"}, moveTime);
+                    tempLength = 0;
+                }
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

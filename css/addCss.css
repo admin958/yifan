@@ -1,0 +1,146 @@
+.product {
+  width: 1200px;
+  margin: 35px auto 90px;
+  overflow: hidden;
+}
+.product .con-FangDa {
+  float: left;
+  width: 350px;
+  height: auto;
+}
+.product .con-FangDa .con-fangDaIMg {
+  border: 1px solid #dddddd;
+  position: relative;
+}
+.product .con-FangDa .con-fangDaIMg .conMile {
+  width: 100%;
+}
+.product .con-FangDa .con-fangDaIMg .fdg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.product .con-FangDa .con-fangDaIMg .magnifyingBegin {
+  display: none;
+  width: 150px;
+  height: 150px;
+  background: rgba(225, 176, 161, 0.6);
+  position: absolute;
+  cursor: move;
+}
+.product .con-FangDa .con-fangDaIMg .magnifyingShow {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border: 3px solid #ffcc66;
+  left: 355px;
+  top: 0px;
+  width: 450px;
+  height: 410px;
+  overflow: hidden;
+}
+.product .con-FangDa .con-fangDaIMg .magnifyingShow img {
+  width: 1100px;
+  height: 1000px;
+  top: 0;
+  left: 0;
+}
+.product .con-FangDa .imgList {
+  width: 350px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.product .con-FangDa .imgList a {
+  top: 4px;
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 68px;
+  border: 1px solid #cccccc;
+  z-index: 1000;
+}
+.product .con-FangDa .imgList a.a1 {
+  left: 0;
+  background: #ffffff url(../images/3.png) no-repeat center center;
+}
+.product .con-FangDa .imgList a.a1:hover {
+  border: 1px solid #aaaaaa;
+  background: #cccccc url(../images/1.png) no-repeat center center;
+}
+.product .con-FangDa .imgList a.a2 {
+  right: 0;
+  background: #ffffff url(../images/4.png) no-repeat center center;
+}
+.product .con-FangDa .imgList a.a2:hover {
+  border: 1px solid #aaaaaa;
+  background: #cccccc url(../images/2.png) no-repeat center center;
+}
+.product .con-FangDa .imgList ul {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  overflow: hidden;
+  width: 500px;
+  height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.product .con-FangDa .imgList ul li {
+  width: 67px;
+  height: auto;
+  float: left;
+  border: 2px solid #dddddd;
+  margin: 4px;
+}
+.product .con-FangDa .imgList ul li img {
+  width: 100%;
+}
+.product .con-FangDa .imgList ul li.active {
+  border: 2px solid #ffcc66;
+}
+.product .productRt {
+  overflow: hidden;
+  padding-left: 70px;
+}
+.product .productRt h3 {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.product .productRt h4 {
+  height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.product .productRt h4 span {
+  display: block;
+  line-height: 28px;
+  width: 90px;
+  text-align: center;
+  font-size: 16px;
+  color: #006699;
+  border: 2px solid #ccc;
+  border-bottom: 2px solid transparent;
+  background: #ffffff;
+  margin-left: 30px;
+  margin-bottom: -1px;
+}
+.product .productRt div {
+  padding: 15px 10px;
+}
+.product .productRt div p {
+  line-height: 30px;
+  font-size: 16px;
+}
+.product .productRt > a {
+  margin-top: 80px;
+  display: block;
+  width: 100px;
+  font-size: 16px;
+  background: #006699;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.product .productRt > a:hover {
+  background: #003163;
+}
